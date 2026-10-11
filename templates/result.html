@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate AI | Your Notes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f1ff;
+            color: #352b46;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px #ded3ee;
+        }
+
+        h1 {
+            color: #8064c8;
+        }
+
+        .filename {
+            background: #f0eaff;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .notes {
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            line-height: 1.7;
+            background: #fff9f4;
+            padding: 20px;
+            border-radius: 12px;
+            max-height: 450px;
+            overflow-y: auto;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #9477d8;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 Your Notes Are Ready!</h1>
+
+        <p>Your PDF was uploaded successfully.</p>
+
+        <p class="filename">
+            <strong>File:</strong> {{ filename }}
+        </p>
+
+        <h2>Extracted Text</h2>
+
+        <div class="notes">{{ extracted_text }}</div>
+
+        <a href="/">← Back to Dashboard</a>
+    </div>
+</body>
+</html>
